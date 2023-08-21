@@ -1,0 +1,52 @@
+.page {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.title{ 
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.dimensions {
+    box-sizing: border-box;
+    width: 317px;
+}
+
+.dimensions__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;   
+}
+
+.dimension {
+    box-sizing: border-box;
+    width: 67px;
+    height: 33px;
+    border-radius: 3px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.dimension__check:checked + .dimension__value  {
+    border: 1px solid #2CB708;
+}
+
+.dimension__value:hover {
+    border: 1px solid #2CB708;
+}
+
+.dimension__value {
+    margin: 0;
+    padding: 7px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    line-height: 1;
+    color: #333232;
+}
+
+.dimension__check {
+    position: absolute;
+    appearance: none;
+}

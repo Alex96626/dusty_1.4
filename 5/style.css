@@ -1,0 +1,140 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  opacity: 0;
+}
+
+.feedback {
+  box-sizing: border-box;
+  width: 855px;
+  padding: 35px 50px 10px 44px;
+  background: #e9eaeb;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 104px;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.stars-list {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.stars-title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.star {
+  font: 0/0 a;
+}
+
+.star:has(+:checked) svg, 
+.star:has(~ .star +:checked) svg,
+.star svg:hover,
+.star:has(~ .star svg:hover) svg{
+fill: #000;
+}
+
+.feedback-input {
+  padding-bottom: 13px;
+  margin-bottom: 60px;
+  border: none;
+  border-bottom: 2px solid #d6d6d6;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  background: transparent;
+}
+
+.description {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0 15px 15px 0;
+  border-bottom: 2px solid #d6d6d6;
+  font-size: 22px;
+  line-height: 1.1;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.feedback-picture-title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.feedback-picture-label {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    margin-top: 20px;
+    padding: 37px 50px;
+    border: 1px solid #d7d6d6;
+    cursor: pointer;
+}
+
+.feedback-picture-description {
+    font-size: 18px;
+    letter-spacing: -1.1px;
+    word-spacing: 2.2px;
+    line-height: 1.5;
+}
+
+.feedback-picture-description__link {
+    text-decoration: underline
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 28px;
+  margin-bottom: 60px;
+}
+
+.feedback-submit { 
+  padding: 23px;
+  font-size: 21px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: #1d1c1c;
+  color: #fff;
+}
