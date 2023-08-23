@@ -1,101 +1,232 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Работа за отзыв</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="body">
-  <article class="feedback">
-    <h1 class="title">Написать отзыв</h1>
-    <form action="#" class="feedback-form" id="feedback-form">
-      <div class="stars">
-        <p class="stars-title">Рейтинг</p>
-        <fieldset class="stars-list">
-         
-          <label class="star" for="star-1">
-            <svg width="30" height="29" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill = "#d6d6d6">
-              <rect fill="none" id="canvas_background" height="29" width="30"/>
-              <path d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z" id="star"/>
-            </svg>
-          </label>  
-          <input type="radio" name="star" value="1" id="star-1" class="sr-only star-input" />
-          
-          <label class="star" for="star-2">
-            <svg  fill = "#d6d6d6" width="30" height="29" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
-              <rect fill="none" id="canvas_background" height="29" width="30"/>
-              <path d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z" id="star"/>
-            </svg>
-          </label>
-          <input type="radio" name="star"  value="2" id="star-2" class="sr-only star-input" />
-          
-          <label class="star" for="star-3">
-            <svg  fill = "#d6d6d6" width="30" height="29" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
-              <rect fill="none" id="canvas_background" height="29" width="30"/>
-              <path d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z" id="star"/>
-            </svg>
-          </label>
-          <input type="radio" name="star"  value="3" id="star-3" class="sr-only star-input" />
-          
-          <label class="star" for="star-4">
-            <svg  fill = "#d6d6d6" width="30" height="29" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
-              <rect fill="none" id="canvas_background" height="29" width="30"/>
-              <path d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z" id="star"/>
-            </svg>
-          </label>
-          <input type="radio" name="star"  value="4" id="star-4" class="sr-only star-input" />
-          
-          <label class="star" for="star-5">
-            <svg  fill = "#d6d6d6" width="30" height="29" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
-              <rect fill="none" id="canvas_background" height="29" width="30"/>
-              <path d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z" id="star"/>
-            </svg>
-          </label>
-          <input type="radio" name="star"  value="5" id="star-5" class="sr-only star-input" />
-        </fieldset>
-      </div>
-      <input
-        type="text"
-        name=""
-        id=""
-        class="feedback-input"
-        placeholder="Имя"
-      />
-      <input
-        type="text"
-        name=""
-        id=""
-        class="feedback-input"
-        placeholder="Город"
-      />
-      <textarea class="feedback-input" name="" id="" cols="1" rows="1" placeholder="Комментарий"></textarea>
-      <p class="description">
-        Повседневная практика показывает, что реализация намеченных плановых
-        заданий в очень значительной степени обуславливает содание дальнейших
-        направлений развития
-      </p>
-      <p class="feedback-picture-title">Загрузить фотографии</p>
-      <input type="file" multiple="multiple" class="sr-only" name="picture" id="feedback-picture">
-      <label for="feedback-picture" class="feedback-picture-label">
-        <?xml version="1.0" encoding="utf-8"?>
-        <svg fill="#d6d6d6" width="70px" height="50px" viewBox="0 -6 46 46" xmlns="http://www.w3.org/2000/svg">
-          <path id="_25.Camera-Front" data-name="25.Camera-Front" d="M43,41H5a4,4,0,0,1-4-4V15a4,4,0,0,1,4-4H6A2,2,0,0,1,8,9h2a2,2,0,0,1,2,2h2a3.7,3.7,0,0,0,2-1l2-2a2.781,2.781,0,0,1,2-1h8a2.549,2.549,0,0,1,2,1l2,2a3.7,3.7,0,0,0,2,1h9a4,4,0,0,1,4,4V37A4,4,0,0,1,43,41Zm2-26a2,2,0,0,0-2-2l-9.221-.013a5.632,5.632,0,0,1-3.193-1.573l-2.13-2.13-.1-.151A.6.6,0,0,0,28,9H20a.817.817,0,0,0-.424.231l-.075.1-2.087,2.086a5.63,5.63,0,0,1-3.193,1.573l-4.151.006c-.024,0-.047.008-.07.008H8c-.014,0-.026,0-.04,0L5,13a2,2,0,0,0-2,2V37a2,2,0,0,0,2,2H43a2,2,0,0,0,2-2ZM24,37A11,11,0,1,1,35,26,11,11,0,0,1,24,37Zm0-20a9,9,0,1,0,9,9A9,9,0,0,0,24,17Zm0,14a5,5,0,1,1,5-5A5,5,0,0,1,24,31Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,24,23ZM10,19H6a1,1,0,0,1-1-1V16a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v2A1,1,0,0,1,10,19Z" transform="translate(-1 -7)" fill-rule="evenodd"/>
-        </svg>
-        <span class="feedback-picture-description">Нажмите на <span class="feedback-picture-description__link">ссылку</span>, чтобы выбрать фотографию или просто перетащите их сюда</span>
-      </label>
-      <div class="photo-list">
-        <img src="images/Screenshot.png" alt="" class="photo-item">
-        <img src="images/Screenshot.png" alt="" class="photo-item">
-        <img src="images/Screenshot.png" alt="" class="photo-item">
-        <img src="images/Screenshot.png" alt="" class="photo-item">
-      </div>
-      <button class="feedback-submit">Опубликовать отзыв</button>
-      
-    </form>
-  </article>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работа за отзыв</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <article class="feedback">
+      <h1 class="title">Написать отзыв</h1>
+      <form action="#" class="feedback-form" id="feedback-form">
+        <div class="stars">
+          <p class="stars-title">Рейтинг</p>
+          <fieldset class="stars-list">
+            <label class="star" for="star-1">
+              <svg
+                width="30"
+                height="29"
+                xmlns="http://www.w3.org/2000/svg"
+                clip-rule="evenodd"
+                fill="#d6d6d6"
+              >
+                <rect
+                  fill="none"
+                  id="canvas_background"
+                  height="29"
+                  width="30"
+                />
+                <path
+                  d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
+                  id="star"
+                />
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              value="1"
+              id="star-1"
+              class="sr-only star-input"
+            />
+
+            <label class="star" for="star-2">
+              <svg
+                fill="#d6d6d6"
+                width="30"
+                height="29"
+                xmlns="http://www.w3.org/2000/svg"
+                clip-rule="evenodd"
+              >
+                <rect
+                  fill="none"
+                  id="canvas_background"
+                  height="29"
+                  width="30"
+                />
+                <path
+                  d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
+                  id="star"
+                />
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              value="2"
+              id="star-2"
+              class="sr-only star-input"
+            />
+
+            <label class="star" for="star-3">
+              <svg
+                fill="#d6d6d6"
+                width="30"
+                height="29"
+                xmlns="http://www.w3.org/2000/svg"
+                clip-rule="evenodd"
+              >
+                <rect
+                  fill="none"
+                  id="canvas_background"
+                  height="29"
+                  width="30"
+                />
+                <path
+                  d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
+                  id="star"
+                />
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              value="3"
+              id="star-3"
+              class="sr-only star-input"
+            />
+
+            <label class="star" for="star-4">
+              <svg
+                fill="#d6d6d6"
+                width="30"
+                height="29"
+                xmlns="http://www.w3.org/2000/svg"
+                clip-rule="evenodd"
+              >
+                <rect
+                  fill="none"
+                  id="canvas_background"
+                  height="29"
+                  width="30"
+                />
+                <path
+                  d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
+                  id="star"
+                />
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              value="4"
+              id="star-4"
+              class="sr-only star-input"
+            />
+
+            <label class="star" for="star-5">
+              <svg
+                fill="#d6d6d6"
+                width="30"
+                height="29"
+                xmlns="http://www.w3.org/2000/svg"
+                clip-rule="evenodd"
+              >
+                <rect
+                  fill="none"
+                  id="canvas_background"
+                  height="29"
+                  width="30"
+                />
+                <path
+                  d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
+                  id="star"
+                />
+              </svg>
+            </label>
+            <input
+              type="radio"
+              name="star"
+              value="5"
+              id="star-5"
+              class="sr-only star-input"
+            />
+          </fieldset>
+        </div>
+        <input
+          type="text"
+          name=""
+          id=""
+          class="feedback-input"
+          placeholder="Имя"
+          value="Мария"
+        />
+        <input
+          type="text"
+          name=""
+          id=""
+          class="feedback-input"
+          placeholder="Город"
+          value="Санкт-Петербург"
+        />
+        <input
+          class="feedback-input"
+          name=""
+          id=""
+          placeholder="Комментарий"
+          value="Нереально красивый цвет"
+        >
+        <textarea name="" id="" cols="1" rows="5"  class="description">
+          Повседневная практика показывает, что реализация намеченных плановых
+          заданий в очень значительной степени обуславливает содание дальнейших
+          направлений развития
+        </textarea>
+        <p class="feedback-picture-title">Загрузить фотографии</p>
+        <input
+          type="file"
+          multiple="multiple"
+          class="sr-only"
+          name="picture"
+          id="feedback-picture"
+        />
+        <label for="feedback-picture" class="feedback-picture-label">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg
+            fill="#d6d6d6"
+            width="70px"
+            height="50px"
+            viewBox="0 -6 46 46"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="_25.Camera-Front"
+              data-name="25.Camera-Front"
+              d="M43,41H5a4,4,0,0,1-4-4V15a4,4,0,0,1,4-4H6A2,2,0,0,1,8,9h2a2,2,0,0,1,2,2h2a3.7,3.7,0,0,0,2-1l2-2a2.781,2.781,0,0,1,2-1h8a2.549,2.549,0,0,1,2,1l2,2a3.7,3.7,0,0,0,2,1h9a4,4,0,0,1,4,4V37A4,4,0,0,1,43,41Zm2-26a2,2,0,0,0-2-2l-9.221-.013a5.632,5.632,0,0,1-3.193-1.573l-2.13-2.13-.1-.151A.6.6,0,0,0,28,9H20a.817.817,0,0,0-.424.231l-.075.1-2.087,2.086a5.63,5.63,0,0,1-3.193,1.573l-4.151.006c-.024,0-.047.008-.07.008H8c-.014,0-.026,0-.04,0L5,13a2,2,0,0,0-2,2V37a2,2,0,0,0,2,2H43a2,2,0,0,0,2-2ZM24,37A11,11,0,1,1,35,26,11,11,0,0,1,24,37Zm0-20a9,9,0,1,0,9,9A9,9,0,0,0,24,17Zm0,14a5,5,0,1,1,5-5A5,5,0,0,1,24,31Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,24,23ZM10,19H6a1,1,0,0,1-1-1V16a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v2A1,1,0,0,1,10,19Z"
+              transform="translate(-1 -7)"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span class="feedback-picture-description"
+            >Нажмите на
+            <span class="feedback-picture-description__link">ссылку</span>,
+            чтобы выбрать фотографию или просто перетащите их сюда</span
+          >
+        </label>
+        <div class="photo-list">
+          <img src="images/Screenshot.png" alt="" class="photo-item" />
+          <img src="images/Screenshot.png" alt="" class="photo-item" />
+          <img src="images/Screenshot.png" alt="" class="photo-item" />
+          <img src="images/Screenshot.png" alt="" class="photo-item" />
+        </div>
+        <button class="feedback-submit">Опубликовать отзыв</button>
+      </form>
+    </article>
+  </body>
 </html>

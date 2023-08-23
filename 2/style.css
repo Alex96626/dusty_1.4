@@ -1,18 +1,17 @@
 .page {
+    display: flex;
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .buy {
-    box-sizing: border-box;
-    width: 290px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 17px;
-    padding: 40px 25px 39px;
+    padding: 40px 25px;
     border-radius: 10px;
-    background: #fBfBfB;
+    background: #fbfbfb;
     box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.10), -4px 0px 4px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -21,6 +20,16 @@
     font-size: 24px;
     line-height: 1.1;
     font-weight: 500;
+}
+
+.buy__brand {
+    padding: 0 2px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #fb6b14;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
 
 .buy__btn {
@@ -34,6 +43,7 @@
     font-weight: 400;
     line-height: 1.1;
     color: #ffffff;
+    transition: background-color 0.5s;
     
 }
 

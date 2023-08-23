@@ -3,6 +3,7 @@
 }
 
 .title{ 
+    margin: 0;
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.1;
@@ -21,9 +22,6 @@
 }
 
 .dimension {
-    box-sizing: border-box;
-    width: 67px;
-    height: 33px;
     border-radius: 3px;
     background: #eee;
     cursor: pointer;

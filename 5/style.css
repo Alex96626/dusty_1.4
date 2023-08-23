@@ -62,6 +62,7 @@
 
 .star {
   font: 0/0 a;
+  cursor: pointer;
 }
 
 .star:has(+:checked) svg, 
@@ -72,7 +73,7 @@ fill: #000;
 }
 
 .feedback-input {
-  padding-bottom: 13px;
+  padding: 13px 0;
   margin-bottom: 60px;
   border: none;
   border-bottom: 2px solid #d6d6d6;
@@ -86,7 +87,11 @@ fill: #000;
   margin: 0;
   margin-bottom: 60px;
   padding: 0 15px 15px 0;
+  border: none;
   border-bottom: 2px solid #d6d6d6;
+  overflow: auto;
+  resize: none;
+  background: transparent;
   font-size: 22px;
   line-height: 1.1;
   font-family: 'Roboto', Helvetica, sans-serif;
