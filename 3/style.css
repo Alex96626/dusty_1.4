@@ -34,9 +34,8 @@
 
 .service__wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  /* width: 100%; */
   height: 224px;
 }
 
@@ -46,6 +45,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 1.41;
+  text-align: center;
 }
 
 .service__info {
