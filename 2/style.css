@@ -1,56 +1,76 @@
+@font-face {
+    font-family: "Caveat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Aeonik"),
+         url("./fonts/aeonik-regular.woff2") format("woff2"),
+         url("./fonts/aeonik-regular.woff") format("woff"),
+         url("./fonts/aeonik-regular.ttf") format("truetype");    
+} 
+
 .page {
     display: flex;
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-.buy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 17px;
-    padding: 40px 25px;
-    border-radius: 10px;
-    background: #fbfbfb;
-    box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.10), -4px 0px 4px 0px rgba(0, 0, 0, 0.10);
-}
-
-.buy__price {
+.transactions {
+    min-width: 392px;
     margin: 0;
-    font-size: 24px;
-    line-height: 1.1;
-    font-weight: 500;
+    padding: 0 32px;
+    list-style: none;
 }
 
-.buy__brand {
-    padding: 0 2px;
+.transaction {
+    padding: 16px 16px 16px 0;
+    border-bottom: 1px solid #e3e3e8;
+    font: 0/0 a;
+}
+
+.transaction__currency-image {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #f9aa4b, #f7931a);
+}
+
+.transaction__currency {
+    vertical-align: top;
+}
+
+.transaction__currency-image, .transaction__currency {
+    display: inline-block;
+}
+
+.transaction__currency-image img {
+    /* меня заставили так делать( запретили использовать flex...  памагитее */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transaction__currency-name, .transaction__recent {
+    font-family: 'Aeonik', Helvetica, sans-serif;
+    margin: 0;
+}
+
+.transaction__currency-name {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 700;
+    color: #000;
+}
+
+.transaction__recent {
+    margin-top: 2px;
     font-size: 12px;
-    letter-spacing: 1px;
-    background-color: #fb6b14;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
+    line-height: 1.35;
+    color: #717184;
 }
 
-.buy__btn {
-    flex-basis: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background: #2CB708;
-    font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: #ffffff;
-    transition: background-color 0.5s;
-    
-}
-
-.buy__btn:hover {
-    background: #28970C;
-}
-
-.buy__btn:focus {
-    background: #53DC2F;
+.transaction__recent-value {
+    color: #5235E8;
 }
