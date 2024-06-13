@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Работа за отзыв</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    >
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="body">
     <article class="feedback">
@@ -29,13 +29,11 @@
               >
                 <rect
                   fill="none"
-                  id="canvas_background"
                   height="29"
                   width="30"
                 />
                 <path
                   d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
-                  id="star"
                 />
               </svg>
             </label>
@@ -45,7 +43,7 @@
               value="1"
               id="star-1"
               class="sr-only star-input"
-            />
+            >
 
             <label class="star" for="star-2">
               <svg
@@ -57,13 +55,11 @@
               >
                 <rect
                   fill="none"
-                  id="canvas_background"
                   height="29"
                   width="30"
                 />
                 <path
                   d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
-                  id="star"
                 />
               </svg>
             </label>
@@ -73,7 +69,7 @@
               value="2"
               id="star-2"
               class="sr-only star-input"
-            />
+            >
 
             <label class="star" for="star-3">
               <svg
@@ -85,13 +81,11 @@
               >
                 <rect
                   fill="none"
-                  id="canvas_background"
                   height="29"
                   width="30"
                 />
                 <path
                   d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
-                  id="star"
                 />
               </svg>
             </label>
@@ -101,7 +95,7 @@
               value="3"
               id="star-3"
               class="sr-only star-input"
-            />
+            >
 
             <label class="star" for="star-4">
               <svg
@@ -113,13 +107,11 @@
               >
                 <rect
                   fill="none"
-                  id="canvas_background"
                   height="29"
                   width="30"
                 />
                 <path
                   d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
-                  id="star"
                 />
               </svg>
             </label>
@@ -129,7 +121,7 @@
               value="4"
               id="star-4"
               class="sr-only star-input"
-            />
+            >
 
             <label class="star" for="star-5">
               <svg
@@ -141,13 +133,11 @@
               >
                 <rect
                   fill="none"
-                  id="canvas_background"
                   height="29"
                   width="30"
                 />
                 <path
                   d="m15.035517,0.310347l3.468083,10.852363l11.222608,0l-9.07908,6.706957l3.468083,10.852363l-9.079692,-6.706957l-9.07908,6.706957l3.468083,-10.852363l-9.079692,-6.706957l11.222608,0l3.468083,-10.852363z"
-                  id="star"
                 />
               </svg>
             </label>
@@ -157,37 +147,30 @@
               value="5"
               id="star-5"
               class="sr-only star-input"
-            />
+            >
           </fieldset>
         </div>
         <input
           type="text"
-          name=""
-          id=""
+          name="name"
           class="feedback-input"
           placeholder="Имя"
           value="Мария"
-        />
+        >
         <input
           type="text"
-          name=""
-          id=""
+          name="city"
           class="feedback-input"
           placeholder="Город"
           value="Санкт-Петербург"
-        />
+        >
         <input
           class="feedback-input"
-          name=""
-          id=""
+          name="comment"
           placeholder="Комментарий"
           value="Нереально красивый цвет"
         >
-        <textarea name="" id="" cols="1" rows="5"  class="description">
-          Повседневная практика показывает, что реализация намеченных плановых
-          заданий в очень значительной степени обуславливает содание дальнейших
-          направлений развития
-        </textarea>
+        <textarea name="description" cols="1" rows="5"  class="description" placeholder="Описание"></textarea>
         <p class="feedback-picture-title">Загрузить фотографии</p>
         <input
           type="file"
@@ -195,9 +178,8 @@
           class="sr-only"
           name="picture"
           id="feedback-picture"
-        />
+        >
         <label for="feedback-picture" class="feedback-picture-label">
-          <?xml version="1.0" encoding="utf-8"?>
           <svg
             fill="#d6d6d6"
             width="70px"
@@ -219,12 +201,20 @@
             чтобы выбрать фотографию или просто перетащите их сюда</span
           >
         </label>
-        <div class="photo-list">
-          <img src="images/Screenshot.png" alt="" class="photo-item" />
-          <img src="images/Screenshot.png" alt="" class="photo-item" />
-          <img src="images/Screenshot.png" alt="" class="photo-item" />
-          <img src="images/Screenshot.png" alt="" class="photo-item" />
-        </div>
+        <ul class="photo-list">
+          <li class="photo-item">
+            <img src="images/Screenshot.png" alt="">
+          </li>
+          <li class="photo-item">
+            <img src="images/Screenshot.png" alt="">
+          </li>
+          <li class="photo-item">
+            <img src="images/Screenshot.png" alt="">
+          </li>
+          <li class="photo-item">
+            <img src="images/Screenshot.png" alt="">
+          </li>
+        </ul>
         <button class="feedback-submit">Опубликовать отзыв</button>
       </form>
     </article>

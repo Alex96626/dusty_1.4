@@ -63,6 +63,7 @@
 .star {
   font: 0/0 a;
   cursor: pointer;
+  transition: all 1s;
 }
 
 .star:has(+:checked) svg, 
@@ -128,18 +129,28 @@ fill: #000;
 }
 
 .photo-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* gap: 32px; */
   margin-top: 28px;
   margin-bottom: 60px;
+  margin: 28px -16px 60px -16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.photo-item {
+  display: inline-block;
+  margin: 15px 16px;
 }
 
 .feedback-submit { 
+  /* display: inline-block; */
   padding: 23px;
   font-size: 21px;
   font-family: 'Montserrat', Helvetica, sans-serif;
   text-transform: uppercase;
   background: #1d1c1c;
   color: #fff;
+  cursor: pointer;
 }
