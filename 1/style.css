@@ -3,8 +3,7 @@
 }
 
 .title{ 
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     font-size: 18px;
     line-height: 1.1;
 }
@@ -15,15 +14,14 @@
 }
 
 .dimensions__list {
-    margin: 0 -4px;
     font: 0 / 0 a;
 }
 
 .dimension {
     display: inline-block;
-    margin: 8px 4px ;
-    border-radius: 3px;
-    background: #eee;
+
+    margin: 4px 4px 0 0;
+
     cursor: pointer;
 }
 
@@ -36,9 +34,16 @@
 }
 
 .dimension__value {
+    display: inline-block;
+
     margin: 0;
     padding: 7px;
+
     border: 1px solid #eee;
+    border-radius: 3px;
+
+    background-color: #eee;
+
     font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1;

@@ -1,76 +1,108 @@
 @font-face {
-    font-family: "Caveat";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local("Aeonik"),
-         url("./fonts/aeonik-regular.woff2") format("woff2"),
-         url("./fonts/aeonik-regular.woff") format("woff"),
-         url("./fonts/aeonik-regular.ttf") format("truetype");    
-} 
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Aeonik"), url("./fonts/aeonik-regular.woff2") format("woff2"),
+    url("./fonts/aeonik-regular.woff") format("woff"),
+    url("./fonts/aeonik-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Aeonik"), url("./fonts/aeonik-medium.woff2") format("woff2"),
+    url("./fonts/aeonik-medium.woff") format("woff"),
+    url("./fonts/aeonik-medium.ttf") format("truetype");
+}
 
 .page {
-    display: flex;
-    font-family: 'Roboto', Helvetica, sans-serif;
+  margin: 0;
+
+  font-family: "Aeonik", Helvetica, sans-serif;
 }
 
 .transactions {
-    min-width: 392px;
-    margin: 0;
-    padding: 0 32px;
-    list-style: none;
+  box-sizing: border-box;
+  max-width: 392px;
+
+  margin: 0;
+  padding: 0 32px;
+
+  list-style: none;
 }
 
 .transaction {
-    padding: 16px 16px 16px 0;
-    border-bottom: 1px solid #e3e3e8;
-    font: 0/0 a;
+  padding: 16px 16px 16px 0;
+
+  border-bottom: 1px solid #e3e3e8;
+
+  font: 0/0 a;
 }
 
 .transaction__currency-image {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #f9aa4b, #f7931a);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #f9aa4b, #f7931a);
 }
 
 .transaction__currency {
-    vertical-align: top;
+  max-width: calc(100% - 52px);
+
+  vertical-align: top;
 }
 
-.transaction__currency-image, .transaction__currency {
-    display: inline-block;
+.transaction__currency-image,
+.transaction__currency {
+  display: inline-block;
 }
-
 .transaction__currency-image img {
-    /* меня заставили так делать( запретили использовать flex...  памагитее */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  /* меня заставили так делать( запретили использовать flex...  памагитее */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.transaction__currency-name, .transaction__recent {
-    font-family: 'Aeonik', Helvetica, sans-serif;
-    margin: 0;
+.transaction__currency-name,
+.transaction__recent {
+  margin: 0;
+
+  font-family: "Aeonik", Helvetica, sans-serif;
 }
 
 .transaction__currency-name {
-    font-size: 14px;
-    line-height: 1.45;
-    font-weight: 700;
-    color: #000;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #000;
+
+  overflow-wrap: break-word;
+
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .transaction__recent {
-    margin-top: 2px;
-    font-size: 12px;
-    line-height: 1.35;
-    color: #717184;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #717184;
+
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .transaction__recent-value {
-    color: #5235E8;
+  text-decoration: none;
+  color: #5235e8;
 }

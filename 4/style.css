@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Akrobat';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -30,6 +30,7 @@
 
 .title__theme-yellow {
   color: #f9ed32;
+  /* padding */
 }
 
 .description {
@@ -64,7 +65,7 @@
   position: relative;
   padding: 15px 42px 15px 16px;
   border-radius: 0 5px 5px 0;
-  border: navajowhite;
+  border: #ffdead;
   background: #06f;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 15px;
